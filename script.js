@@ -80,7 +80,7 @@ function animacionCaps(numero) {
     }
     if (numero in indicesH) {
         const index = indicesH[numero];
-        let stringFondo = 'cap' + (index+1) + '.png';
+        let stringFondo = 'cap' + (index+1) + '.webp';
         console.log(stringFondo)
         imgsFondos2[index].style = "width: 400px; height: 85%";
         circulos2[index].style.background = "red";

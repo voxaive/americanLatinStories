@@ -14,7 +14,7 @@ nav{
 }
 /* seccionInicio*/
 header{
-    background-image: url(imagenes/banner.png);
+    background-image: url(imagenes/banner.webp);
     height: 1000px;
     background-repeat: none;
     background-position: center;
@@ -340,7 +340,7 @@ hr{
     z-index: 0;
 }
 .franja{
-    background-image: url(imagenes/franja.png);
+    background-image: url(imagenes/franja.webp);
     display: flex;
     width: 50%;
     height: 150px;
@@ -350,7 +350,7 @@ hr{
 
 }
 .franja2{
-    background-image: url(imagenes/franja.png);
+    background-image: url(imagenes/franja.webp);
     display: flex;
     width: 50%;
     height: 150px;
@@ -361,7 +361,7 @@ hr{
 
 }
 .franja3{
-    background-image: url(imagenes/franja2.png);
+    background-image: url(imagenes/franja2.webp);
     display: flex;
     width: 60%;
     height: 150px;
@@ -370,7 +370,7 @@ hr{
     background-position: center 11%;
 }
 .franja4{
-    background-image: url(imagenes/franja2.png);
+    background-image: url(imagenes/franja2.webp);
     display: flex;
     width: 70%;
     height: 200px;
@@ -445,7 +445,7 @@ hr{
 
 #capitulos{
     height: 1200px;
-    background-image: url(imagenes/cap1.png);
+    background-image: url(imagenes/cap1.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -577,7 +577,7 @@ hr{
     object-fit: cover;
 }
 .tituloC{
-    background-image: url('imagenes/franjaCont.png');
+    background-image: url('imagenes/franjaCont.webp');
     background-position: 0% 80%;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -634,6 +634,7 @@ hr{
 .formCon input::placeholder{
     color: white;
 }
+
 .msj{
     height: 120px !important;
 }
