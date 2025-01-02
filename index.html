@@ -7,12 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="/script.js"></script>
     <title>Document</title>
+    <script src="/script.js"></script>
+
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="barraNav">
             <div>
                 <img src="imagenes/logo.png" alt="">
                 <ul class="menuSR">
@@ -90,11 +91,45 @@
     </section>
     <section id="capitulos">
         <div class="capCen">
-            <div class="textosCapitulo">
+            <div id="textoCaps" class="textosCapitulo">
                 <h2>CAPITULO I:</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, nisl ut vestibulum finibus, elit ligula efficitur elit, ac facilisis odio elit vel felis. Maecenas cursus, arcu a suscipit semper, felis justo tincidunt neque, vel volutpat sapien arcu et odio. Quisque id magna ac massa bibendum interdum sit amet vitae sapien. Aenean sit amet urna id dolor aliquet consequat in ac turpis. Nullam vestibulum auctor turpis vel pellentesque. Phasellus at bibendum ligula. Nullam efficitur</p>
             </div>
         </div>
+        <div class="barraHist2">
+            <div class="contenedorDeslizante">
+                <div class="barra2">
+                    <hr>
+                    <div onclick="location.href = '#huno'" class="circ2 huno"></div>
+                    <div onclick="location.href = '#hdos'" class="circ2 hdos"></div>
+                    <div onclick="location.href = '#htres'" class="circ2 htres"></div>
+                    <div onclick="location.href = '#hcuatro'" class="circ2 hcuatro"></div>
+                    <div onclick="location.href = '#hcinco'" class="circ2 hcinco"></div>
+                </div><br><br>
+                <div class="cuadrosImg2">
+                    <div id="huno" class="imgsFond2 huno">
+                        <img src="imagenes/cap1.png" alt="">
+                    </div>
+                    <div id="hdos" class="imgsFond2 hdos">
+                        <img src="imagenes/cap2.png" alt="">
+                    </div>
+                    <div id="htres" class="imgsFond2 htres">
+                        <img src="imagenes/cap3.png" alt="">
+                    </div>
+                    <div id="hcuatro" class="imgsFond2 hcuatro">
+                        <img src="imagenes/cap4.png" alt="">
+                    </div>
+                    <div id="hcinco" class="imgsFond2 hcinco">
+                        <img src="imagenes/cap5.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
     </section>
+    <script src="/script.js"></script>
+
 </body>
 </html>

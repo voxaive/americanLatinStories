@@ -6,6 +6,9 @@ body{
     font-family: "Oswald", serif;
     z-index: 1;
 }
+button{
+    cursor: pointer;
+}
 nav{
     z-index: 3;
 }
@@ -32,6 +35,10 @@ nav{
     justify-content: center;
     align-items: center;
     position: fixed;
+    padding: 7px;
+}
+#barraNav{
+    
 }
 nav div{
     width: 90%;
@@ -94,15 +101,17 @@ nav div button{
 .rojo{
     background-color: red;
     color: white;
+    transition: all 1s;
 }
 .vacio{
     background: none;
     color: red;
     margin-left: 10px;
+    transition: all 1s;
 }
 hr{
     height: 100%;
-    width: 0.5px;
+    width: 0px;
 }
 .barra{
     height: 100%;
@@ -115,6 +124,7 @@ hr{
     height: 20px;
     width: 20px;
     cursor: pointer;
+    transition: all 1s;
 }
 .circ:hover{
     background-color: red;
@@ -129,33 +139,46 @@ hr{
     margin-top: 10PX;
     margin-right: 10px;
     width: 250px;
+    transition: all 1s;
+    cursor: pointer;
 }
 .imgsFond img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.rojo:hover{
+    background-color: white;
+    border-color: white;
+}
+.rojo:hover p{
+    color: red;
+}
+
+.vacio:hover{
+    background-color: red;
+    border-color: red;
+}
+.vacio:hover p{
+    color: white;
+}
 .uno{
-    top: -100px;
+    top: -690px;
 }
-.circ .uno:hover .imgsFond .uno{
-    width: 200px;
-    height: 200px;
-}
+
+
 .dos{
-    top: -260px;
+    top: -560px;
 }
 .tres{
     top: -430px;
 }
 .cuatro{
-    top: -600px;
+    top: -300px;
 }
 .cinco{
-    top: -770px;
+    top: -170px;
 }
-
-
 /* seccionInicio fin*/
 /*nosotros*/
 
@@ -170,8 +193,9 @@ hr{
     z-index: 0;
 }
 .ConjuntoFranja2{
-    position: relative;
-    top: 40px;
+    position: absolute;
+    width: 100%;
+    top: 2000px;
     display: flex;
     z-index: 0;
 }
@@ -204,13 +228,11 @@ hr{
     transform: scaleX(1) scaleY(-1);
     background-repeat: no-repeat;
     background-position: center 11%;
-    position: relative;
 }
 .franja4{
     background-image: url(imagenes/franja2.png);
     display: flex;
     width: 70%;
-    position: relative;
     height: 200px;
     right: 0px;
     z-index: 6;
@@ -262,13 +284,16 @@ hr{
 /*capitulos*/
 
 #capitulos{
-    height: 1200px;
+    height: 1500px;
     background-image: url(imagenes/cap1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    object-fit: cover;
-}
+    background-size:cover;
+    background-position: center center;
 
+}
+.centTCaps{
+    height: 100%;
+}
 .capCen{
     display: flex;
     justify-content: center;
@@ -279,6 +304,81 @@ hr{
 .textosCapitulo{
     width: 90%;
 }
+.cuadrosImg2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-shrink: 0; 
+}
+.imgsFond2 {
+    height: 200px;
+    width: 300px;
+    flex-shrink: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.imgsFond2 img{
+    width: 100%;
+    height: 100%;
+}
+.contenedorDeslizante {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.circ2{
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.barra2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-shrink: 0; 
+
+}
+.barra2 hr{
+    width: 90%;
+    position: absolute;
+    height: 0px;
+}
+.barraHist2 {
+    width: 100%;
+    height: 30%;
+    overflow-x: scroll; 
+    display: flex; 
+}
+.barraHist2::-webkit-scrollbar {
+    height: 0px;
+}
+
+.barraHist2::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+.huno{
+    right: 89%;
+}
+.hdos{
+    right: 68.5%;
+
+}
+.htres{
+    right: 49.5%;
+}
+.hcuatro{
+    right: 30%;
+}
+.hcinco{
+    right: 10%;
+}
+
 .textosCapitulo *{
     width: 45%;
     color: white;
