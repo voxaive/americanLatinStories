@@ -3,6 +3,12 @@ var fondos = document.getElementsByClassName('imgsFond');
 var fondos2 = document.getElementsByClassName('imgsFond2');
 var circulos2 = document.getElementsByClassName('circ2');
 
+var lis = document.querySelectorAll('li')
+for(let i = 0; i < lis.length; i++){
+    lis[i].addEventListener('mouseover', () => lineaMenu(lis[i]));
+    lis[i].addEventListener('mouseout', () => lineaMenuSacar(lis[i]));
+}
+
 var indices = {
     uno: 0,
     dos: 1,
@@ -52,6 +58,15 @@ for (let i = 0; i < circulos.length; i++) {
 
     fondos2[i].addEventListener('mouseover', () => animacionCaps(fondos2[i].classList[1]));
     fondos2[i].addEventListener('mouseout', () => retirarAnimsCaps(fondos2[i].classList[1]));
+}
+function lineaMenu(lis){
+    console.log(lis)
+    lis.querySelector('hr').style.visibility = 'visible';
+    lis.querySelector('hr').style.width = '100%';
+}
+function lineaMenuSacar(lis){
+    lis.querySelector('hr').style.visibility = 'hidden';
+    lis.querySelector('hr').style.width = '0%';
 }
 
 function animacionCaps(numero) {

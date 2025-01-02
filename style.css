@@ -10,7 +10,7 @@ button{
     cursor: pointer;
 }
 nav{
-    z-index: 3;
+    z-index: 13;
 }
 /* seccionInicio*/
 header{
@@ -52,6 +52,17 @@ nav div{
 }
 .menuSR li{
     list-style: none;
+    color: white;
+    transition: all 1s;
+    
+}
+.lineaMenu{
+    visibility: hidden;
+    border-color: red;
+    height: 0px;
+    width: 0px;
+    margin-top: 0px;
+    transition: all 0.5s;
 }
 .menuSR a{
     text-decoration: none;
@@ -179,6 +190,135 @@ hr{
 .cinco{
     top: -170px;
 }
+
+@media(max-width: 1126px){
+    .barraHist{
+        display: none;
+    }
+    .text{
+        width: 95%;
+    }
+    .titulo{
+        width: 100%;
+    }
+}
+@media(max-width: 468px){
+    .titulo{
+        width: 90%;
+        margin-left: 50px;
+    }
+}
+@media(max-width: 630px){
+    .tituloC h2{
+       margin-bottom: 0px !important;
+    }
+    .tituloC{
+        background-size: 80% !important;
+    }
+}
+@media(max-width: 409px){
+    .tituloC{
+        background-size: 100% !important;
+    }
+}
+.cajaMenuRep{
+    display: none;
+}
+@media(max-width:468px){
+    #barraNav div{
+        display: none !important;
+    }
+
+    .mav {
+        display: none;
+    }
+
+    .BarraN {
+        display: none;
+    }
+
+    .checkbtnRep {
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+
+    li {
+        opacity: 100%;
+    }
+
+    .logoRep {
+        width: 70px;
+        height: 70px;
+        margin-left: 20%;
+    }
+
+    #ulREP {
+        position: fixed;
+        width: 70%;
+        height: 3576px;
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        padding: 0;
+        top: 80px;
+        z-index: 999;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0%;
+        left: -100%;
+        text-align: center;
+        transition: all 1.7s;
+        right: -100%;
+    }
+    #abrir{
+        font-size: 25px;
+    }
+    .cajaMenuRep {
+        z-index: 999;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cajaMenuRep ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .cajaMenuRep ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .cajaMenuRep ul li a:hover {
+        color: rgb(255, 0, 0);
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: white;
+    }
+
+    #checkMenRep {
+        display: none;
+    }
+
+    #checkMenRep:checked~#ulREP {
+        left: 0;
+
+    }
+
+    li:checked~#ulREP {
+        right: -1000px;
+    }
+}
 /* seccionInicio fin*/
 /*nosotros*/
 
@@ -279,12 +419,32 @@ hr{
 .video{
     width: 90%;
 }
+@media(max-width:1021px){
+    .textoNootros{
+        width: 100%;
+    }
+    .imgPersonCir{
+        display: none;
+    }
+    .video{
+        width: 100%;
+    }
+}
+@media(max-width:461px){
+    #Nosotros{
+        height: 800px;
+    }
+    .ConjuntoFranja2{
+        top: 1800px;
+    }
+
+}
 /* fin nosotros*/
 
 /*capitulos*/
 
 #capitulos{
-    height: 1500px;
+    height: 1200px;
     background-image: url(imagenes/cap1.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -299,7 +459,7 @@ hr{
     justify-content: center;
     width: 100%;
     align-items: center;
-    height: 70%;
+    height: 60%;
 }
 .textosCapitulo{
     width: 90%;
@@ -383,4 +543,167 @@ hr{
     width: 45%;
     color: white;
 }
+@media(max-width:1021px){
+    .textosCapitulo *{
+        width: 100%;
+    }
+    .franjasNegras{
+        top: 3100px !important;
+    }
+}
+@media(max-width:457px){
+
+    .franjasNegras{
+        top: 2950px !important;
+    }
+}
+
 /* capitulos fin*/
+/*contactar*/
+
+#contactar{
+
+    background-color: rgb(0, 0, 0);
+}
+.franjasNegras{
+    position: absolute;
+    top: 2980px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.franjasNegras img{
+    width: 100%;
+    object-fit: cover;
+}
+.tituloC{
+    background-image: url('imagenes/franjaCont.png');
+    background-position: 0% 80%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    height: 50%;
+    display: flex;
+    align-items: center;
+} 
+.tituloC h2{
+    margin-left: 100px;
+    color: white;
+    font-size: 30px;
+}
+.mapa{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 47px;
+}
+.centrCo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.cajaC{
+    position: relative;
+    z-index: 7;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.formCon{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.formCon input[type='submit']{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.formCon input{
+    margin-top: 10px;
+    height: 40px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+.formCon input::placeholder{
+    color: white;
+}
+.msj{
+    height: 120px !important;
+}
+li *{
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+}
+.cajaConjuntoCuls{
+    position: relative;
+    z-index: 7;
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin-top: 50px;
+}
+.cajaUls{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.cajaCopys{
+    width:35%;
+    display: flex;
+    
+}
+.cajaCopys img{
+    width: 250px;
+    height: 150px;
+}
+.parrafoCopy{
+    color: white;
+    width: 180px;
+}
+@media(max-width:900px){
+    .cajaC{
+        flex-direction: column;
+    }
+    .tituloC{
+        width: 100%;
+        height: 180px;
+    }
+    .tituloC h2{
+        margin-top: -16px;
+    }
+    .formCon{
+        width: 100%;
+    }
+    .mapa{
+        width: 100%;
+    }
+    .cajaConjuntoCuls{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajaUls{
+        width: 94%;
+    }
+    .cajaUls ul{
+        padding: 0px;
+        margin: 0px;
+    }
+    .cajaCopys{
+        width: 94%;
+        justify-content: space-between;
+    }
+    @media(max-width:484px){
+        .cajaCopys{
+            flex-direction: column;
+        }
+    }
+}
+/*contactar fin*/
